@@ -1,0 +1,168 @@
+body {
+            background-color: yellow;
+  background-image: url("https://imgscdn.stargazete.com/imgsdisk/2023/03/02/galatasaray-cildirdi-tara-702_2-41.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100% auto;
+  
+        }
+        
+        .header {
+            background-color: black;
+            text-align: center;
+            padding: 20px;
+            color: yellow;
+            font-size: 40px;
+          opacity: 0.5;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .image {
+            text-align: center;
+            width: 100% auto;
+            background-image: url("https://hlkiurt3.rocketcdn.com/globalvariables/3216c77f34e542d0bb70fd4f8e79acd7.jpeg");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        
+        .image img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .text {
+            color: black;
+            display: none; 
+          text-align: left;
+            background-color: white; 
+            padding: 10px;
+          opacity: 0.7;
+        }
+h2{
+            color: yellow;
+        }
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+#scrollToTopBtn img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+#scrollToTopBtn span {
+  order: 2;
+  margin-left: 5px;
+}
+#menu-toggle {
+    display: none;
+}
+
+#menu-toggle-label {
+    display: block;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 999;
+}
+
+#menu-toggle-label span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: yellow;
+    margin-bottom: 5px;
+    transition: transform 0.3s ease;
+}
+
+#menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: black;
+ opacity: 0.5;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+    z-index: 998;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 20px;
+}
+
+#menu ul li {
+    margin-bottom: 15px;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    color: yellow;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#menu-toggle:checked + #menu-toggle-label span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 7px);
+}
+
+#menu-toggle:checked + #menu-toggle-label span:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-toggle:checked + #menu-toggle-label span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -7px);
+}
+
+#menu-toggle:checked ~ #menu {
+    transform: translateX(0);
+}
+
+.slideshow-container {
+  width: 100%;
+  height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+
+.slideshow-container img {
+  width: 100%;
+  height: 100%;
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.video-container {
+  width: 100%;
+  text-align: center;
+}
+
+#youtubeVideo {
+  height: 400px;
+  width: 700px;
+  margin-top: 20px;
+}
