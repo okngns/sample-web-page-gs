@@ -33,6 +33,8 @@ body {
         .image img {
             max-width: 100%;
             height: auto;
+			padding: 30px;
+			
         }
         
         .text {
@@ -140,21 +142,26 @@ h2{
 }
 
 .slideshow-container {
-  width: 100%;
-  height: 400px;
+  width: 1000px;
+  height: 500px;
   position: relative;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .slideshow-container img {
-  width: 100%;
-  height: 100%;
-  
+  max-width: 1000%;
+  max-height: 100%;
+  object-fit: contain;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 10;
+  left: auto;
   opacity: 0;
   transition: opacity 0.5s ease-in-out;
+  margin: 0 auto;
 }
 .video-container {
   width: 100%;
